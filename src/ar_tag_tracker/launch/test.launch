@@ -1,0 +1,10 @@
+<launch>
+  <node name="ar_tag_tracker" pkg="ar_tag_tracker" type="ar_tag_tracker" output="screen"/>
+  <include file="$(find ar_tag_tracker)/launch/camera.launch"/>
+  <include file="$(find ar_track_alvar)/launch/pr2_indiv_no_kinect.launch">
+    <arg name="cam_image_topic" value="/usb_cam/image_raw" />
+    <arg name="cam_info_topic" value="/usb_cam/camera_info" />
+    <arg name="output_frame" value="usb_cam" />
+  </include>
+  <!-- <include file="$(find robotont_driver)/launch/fake_driver.launch"/> -->
+</launch>

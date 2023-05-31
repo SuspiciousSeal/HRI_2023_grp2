@@ -1,0 +1,13 @@
+[submodule "src/ar_track_alvar"]
+	path = src/ar_track_alvar
+	url = https://github.com/ros-perception/ar_track_alvar
+	branch = noetic-devel
+[submodule "src/robotont_driver"]
+	path = src/robotont_driver
+	url = https://github.com/robotont/robotont_driver.git
+[submodule "src/robotont_description"]
+	path = src/robotont_description
+	url = https://github.com/robotont/robotont_description.git
+[submodule "src/robotont_msgs"]
+	path = src/robotont_msgs
+	url = https://github.com/robotont/robotont_msgs.git
