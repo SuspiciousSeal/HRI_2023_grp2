@@ -1,0 +1,50 @@
+{
+    "graph_name": "umrf_graph_0",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaDoHriAction",
+            "package_name": "ta_do_hri_action",
+            "id": 0,
+            "state": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "tag_confirmed": {
+                    "pvf_type": "number"
+                }
+            },
+            "parents": [
+                {
+                    "name": "TaWaitForTag",
+                    "id": 0,
+                    "required": true,
+                    "stop_when_received": false
+                }
+            ]
+        },
+        {
+            "name": "TaWaitForTag",
+            "package_name": "ta_wait_for_tag",
+            "id": 0,
+            "state": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "tag_id": {
+                    "pvf_type": "number"
+                }
+            },
+            "output_parameters": {
+                "tag_confirmed": {
+                    "pvf_type": "number"
+                }
+            },
+            "children": [
+                {
+                    "name": "TaDoHriAction",
+                    "id": 0
+                }
+            ]
+        }
+    ]
+}

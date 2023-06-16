@@ -1,0 +1,15 @@
+{
+    "name": "TaWaitForTag",
+    "package_name": "ta_wait_for_tag",
+    "effect": "synchronous",
+    "input_parameters": {
+        "tag_id": {
+            "pvf_type": "number"
+        }
+    },
+    "output_parameters": {
+        "tag_confirmed": {
+            "pvf_type": "number"
+        }
+    }
+}

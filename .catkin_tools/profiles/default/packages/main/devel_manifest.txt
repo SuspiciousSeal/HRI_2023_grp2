@@ -3,3 +3,6 @@ main
 /home/robert/HRI_2023_grp2/devel/.private/main/share/main/cmake/mainConfig.cmake /home/robert/HRI_2023_grp2/devel/share/main/cmake/mainConfig.cmake
 /home/robert/HRI_2023_grp2/devel/.private/main/share/main/cmake/mainConfig-version.cmake /home/robert/HRI_2023_grp2/devel/share/main/cmake/mainConfig-version.cmake
 /home/robert/HRI_2023_grp2/devel/.private/main/lib/pkgconfig/main.pc /home/robert/HRI_2023_grp2/devel/lib/pkgconfig/main.pc
+/home/robert/HRI_2023_grp2/devel/.private/main/lib/main/main_robot_manager /home/robert/HRI_2023_grp2/devel/lib/main/main_robot_manager
+/home/robert/HRI_2023_grp2/devel/.private/main/lib/main/main_pmi_client /home/robert/HRI_2023_grp2/devel/lib/main/main_pmi_client
+/home/robert/HRI_2023_grp2/devel/.private/main/lib/main/main_cmi_client /home/robert/HRI_2023_grp2/devel/lib/main/main_cmi_client

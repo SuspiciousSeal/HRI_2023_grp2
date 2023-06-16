@@ -1,0 +1,20 @@
+{
+    "graph_name": "ta_do_hri_action",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaDoHriAction",
+            "package_name": "ta_do_hri_action",
+            "id": 0,
+            "state": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "tag_confirmed": {
+                    "pvf_type": "number",
+                    "pvf_value": 0.0
+                }
+            }
+        }
+    ]
+}
