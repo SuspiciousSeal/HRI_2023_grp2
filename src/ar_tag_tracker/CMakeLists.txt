@@ -10,6 +10,10 @@ project(ar_tag_tracker)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   ar_track_alvar_msgs
+  geometry_msgs
+  tf
+  move_base_msgs
+  actionlib
 )
 
 ## System dependencies are found with CMake's conventions
@@ -206,3 +210,6 @@ include_directories(
 
 add_executable(ar_tag_tracker src/ar_tag_tracker.cpp)
 target_link_libraries(ar_tag_tracker ${catkin_LIBRARIES})
+
+add_executable(follow_tag src/follow_tag.cpp)
+target_link_libraries(follow_tag ${catkin_LIBRARIES})

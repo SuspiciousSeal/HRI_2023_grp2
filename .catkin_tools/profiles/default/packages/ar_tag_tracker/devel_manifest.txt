@@ -4,3 +4,4 @@ ar_tag_tracker
 /home/robert/HRI_2023_grp2/devel/.private/ar_tag_tracker/share/ar_tag_tracker/cmake/ar_tag_trackerConfig.cmake /home/robert/HRI_2023_grp2/devel/share/ar_tag_tracker/cmake/ar_tag_trackerConfig.cmake
 /home/robert/HRI_2023_grp2/devel/.private/ar_tag_tracker/lib/pkgconfig/ar_tag_tracker.pc /home/robert/HRI_2023_grp2/devel/lib/pkgconfig/ar_tag_tracker.pc
 /home/robert/HRI_2023_grp2/devel/.private/ar_tag_tracker/lib/ar_tag_tracker/ar_tag_tracker /home/robert/HRI_2023_grp2/devel/lib/ar_tag_tracker/ar_tag_tracker
+/home/robert/HRI_2023_grp2/devel/.private/ar_tag_tracker/lib/ar_tag_tracker/follow_tag /home/robert/HRI_2023_grp2/devel/lib/ar_tag_tracker/follow_tag
