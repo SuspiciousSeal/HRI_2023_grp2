@@ -1,6 +1,5 @@
 #include "ros/ros.h"
 #include "temoto_robot_manager/robot_manager_interface.h"
-
 int main(int argc, char** argv)
 {
   ros::init(argc, argv, "main_robot_manager");

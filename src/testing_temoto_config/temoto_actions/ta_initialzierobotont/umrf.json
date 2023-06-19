@@ -1,0 +1,18 @@
+{
+    "name": "TaInitialzierobotont",
+    "package_name": "ta_initialzierobotont",
+    "effect": "synchronous",
+    "input_parameters": {
+        "robot_name": {
+            "pvf_type": "string"
+        }
+    },
+    "output_parameters": {
+        "robot_name": {
+            "pvf_type": "string"
+        },
+        "robot_description": {
+            "pvf_type": "string"
+        }
+    }
+}

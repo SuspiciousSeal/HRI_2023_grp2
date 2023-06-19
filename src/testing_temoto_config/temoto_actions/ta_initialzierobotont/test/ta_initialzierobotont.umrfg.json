@@ -1,0 +1,28 @@
+{
+    "graph_name": "ta_initialzierobotont",
+    "graph_description": "",
+    "graph_state": 1,
+    "umrf_actions": [
+        {
+            "name": "TaInitialzierobotont",
+            "package_name": "ta_initialzierobotont",
+            "id": 0,
+            "state": 0,
+            "effect": "synchronous",
+            "input_parameters": {
+                "robot_name": {
+                    "pvf_type": "string",
+                    "pvf_value": "MODIFY THIS FIELD"
+                }
+            },
+            "output_parameters": {
+                "robot_name": {
+                    "pvf_type": "string"
+                },
+                "robot_desctiption": {
+                    "pvf_type": "string"
+                }
+            }
+        }
+    ]
+}
