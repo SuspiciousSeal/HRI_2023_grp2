@@ -18,10 +18,10 @@ auto arposecallback(ar_track_alvar_msgs::AlvarMarkers markers)
         auto pos = marker.pose.pose.position;
         
         geometry_msgs::Twist msg;
-         if (pos.z > 0.3) {
-            if (pos.x > 0.4) {
+         if (pos.x > 0.3) {
+            if (pos.y > 0.4) {
                 msg.angular.z = -1;
-            } else if (pos.x < 0.2) {
+            } else if (pos.y < 0.2) {
                 msg.angular.z = 1;
             } else {
                 msg.angular.z = 0;

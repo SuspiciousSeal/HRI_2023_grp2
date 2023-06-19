@@ -19,6 +19,6 @@
     <remap from="camera_info"   to="camera/color/camera_info" />
   </node>
   <node name="ar_tag_tracker" pkg="ar_tag_tracker" type="ar_tag_tracker" output="screen"/>
-  <node name="follow_tag" pkg="follow_tag" type="follow_tag" output="screen"/>
+  <node name="follow_tag" pkg="ar_tag_tracker" type="follow_tag" output="screen"/>
   
 </launch>
