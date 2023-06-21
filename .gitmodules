@@ -11,3 +11,6 @@
 [submodule "src/robotont_msgs"]
 	path = src/robotont_msgs
 	url = https://github.com/robotont/robotont_msgs.git
+[submodule "src/audio_common"]
+	path = src/audio_common
+	url = https://github.com/ros-drivers/audio_common.git

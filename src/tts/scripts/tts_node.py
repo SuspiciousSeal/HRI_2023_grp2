@@ -2,6 +2,8 @@ import rospy
 from std_msgs.msg import ByteMultiArray, String
 import gtts
 import io
+from pydub import AudioSegment
+from pydub.playback import play
 
 
 def tts_bytes(input):
@@ -20,11 +22,14 @@ def tts_text_to_sound_cb(input):
   output = tts_bytes(input.data)
   if(publish):
     publisher.publish(output.read())
+  else:
+    song = AudioSegment.from_file(output, format="mp3")
+    play(song)
     
 
 def tts_node():
   pub = rospy.Publisher('tts_audio', ByteMultiArray, queue_size=10)
-  sub = rospy.Subscriber('tts_text', String, queue_size=10, callback=tts_text_to_sound_cb)
+  sub = rospy.Subscriber('tts_text', String, queue_size=1, callback=tts_text_to_sound_cb)
   rospy.init_node('tts_node', anonymous=True)
   rate = rospy.Rate(10) # 10hz
   rospy.loginfo('started tts node')

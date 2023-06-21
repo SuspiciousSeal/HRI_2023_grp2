@@ -32,11 +32,7 @@ public:
  */
 void initializeTemotoAction()
 {
-  /* * * * * * * * * * * * * * * * * * * * * * *
-   *                          
-   * ===> YOUR INITIALIZATION ROUTINES HERE <===
-   *                          
-   * * * * * * * * * * * * * * * * * * * * * * */
+  
 
   TEMOTO_INFO_STREAM("Action initialized");
 }
@@ -48,11 +44,7 @@ void executeTemotoAction()
 {
   getInputParameters();
   
-  /* * * * * * * * * * * * * * * * * * * * * * *
-   *                          
-   *         ===> YOUR CODE HERE <===
-   *                          
-   * * * * * * * * * * * * * * * * * * * * * * */
+  
 
   setOutputParameters();
 }

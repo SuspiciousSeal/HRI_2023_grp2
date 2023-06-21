@@ -17,6 +17,8 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   temoto_action_engine
   temoto_core
+  ar_track_alvar
+  std_msgs
 )
 
 catkin_package()

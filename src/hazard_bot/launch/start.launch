@@ -1,0 +1,31 @@
+<launch>
+    <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find hazard_bot)/config/config.rviz" />
+    <node name="amcl" pkg="amcl" type="amcl"/> -->
+    <!-- <include file="$(find robotont_navigation)/launch/move_base.launch" /> -->
+    <node name="tts_node" pkg="tts" type="tts_node.py"/>
+    <!-- <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen">
+        <param name="video_device" value="/dev/video0" />
+        <param name="image_width" value="1920" />
+        <param name="image_height" value="1080" />
+        <param name="pixel_format" value="mjpeg" />
+        <param name="color_format" value="yuv422p" />
+        <param name="camera_frame_id" value="usb_cam" />
+        <param name="io_method" value="mmap" />
+        <param name="framerate" value="30" />
+    </node> -->
+    <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+    <param name="video_device" value="/dev/video0" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="yuyv" />
+    <param name="camera_frame_id" value="usb_cam" />
+    <param name="io_method" value="mmap"/>
+  </node>
+    <include file="$(find ar_track_alvar)/launch/pr2_indiv_no_kinect.launch">
+        <arg name="cam_image_topic" value="/usb_cam/image_raw" />
+        <arg name="cam_info_topic" value="/usb_cam/camera_info" />
+        <arg name="output_frame" value="usb_cam" />
+    </include>
+    <include file="$(find robotont_driver)/launch/fake_driver.launch" />
+    <node name="hazard_bot_mover" pkg="hazard_bot" type="mover" output="screen"/>
+</launch>

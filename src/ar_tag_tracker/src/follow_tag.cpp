@@ -55,7 +55,7 @@ int main(int argc, char **argv)
     ros::NodeHandle n;
     ros::Subscriber alvar_sub = n.subscribe<ar_track_alvar_msgs::AlvarMarkers>("/ar_pose_marker", 1000, arposecallback);
     velocity_pub = n.advertise<geometry_msgs::Twist>("/cmd_vel", 1);   
-    tts_pub = n.advertise<geometry_msgs::Twist>("tts_text", 1);   
+    tts_pub = n.advertise<std_msgs::String>("tts_text", 1);   
     ros::spin();
 
     return 0;

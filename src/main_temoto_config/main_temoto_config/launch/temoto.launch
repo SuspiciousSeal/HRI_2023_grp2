@@ -11,11 +11,11 @@
   <env name="ROSCONSOLE_CONFIG_FILE" value="$(find main_temoto_config)/config/console.conf" />  
 
   <group ns="$(arg temoto_namespace)">
-    <node name="temoto_process_manager" 
+    <!-- <node name="temoto_process_manager" 
           pkg="temoto_process_manager" 
           type="temoto_process_manager" 
           output="screen"
-          respawn="$(arg respawn_nodes)"/>
+          respawn="$(arg respawn_nodes)"/> -->
 
     <node name="temoto_component_manager" 
           pkg="temoto_component_manager" 
